@@ -3,7 +3,7 @@ import {Modal, Button,Row,Col,Form} from 'react-bootstrap';
 
 import './Modal.css';
 
-export class Modal extends Component{
+export class Modal1 extends Component{
     constructor(props){
         super(props);
     }

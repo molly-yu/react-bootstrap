@@ -5,7 +5,6 @@ import {Home} from './Home';
 import {About} from './About';
 import Projects from './Projects';
 import {Connect} from './Connect';
-import Modal from './components/Modal';
 // import {NoMatch} from './NoMatch';
 import {Layout} from './components/Layout';
 import{NavigationBar} from './components/NavigationBar';
