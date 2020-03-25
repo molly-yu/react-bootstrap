@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import {Button, ButtonToolBar} from 'react-bootstrap';
+import {Modal1} from './components/Modal1';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
