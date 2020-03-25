@@ -23,6 +23,7 @@ const Styles = styled.div`
         right: 0;
         bottom: 20vh;
         z-index = -1;
+        
         -webkit-box-shadow: inset 0 0 1000px #7B4455;
        -moz-box-shadow: inset 0 0 1000px #7B4455;
         box-shadow: inset 0 0 1000px #7B4455;

@@ -13,12 +13,11 @@ import project6 from './assets/3.JPG';
 // import "./styles.css";
 
 const Styles = styled.div`
-  .Projects {
+  .projects {
     background-color: #EDD7DE;
     min-height:100vh;
     width:100%;
     position:relative;
-    z-index: -2;
     text-align:center;
     padding-top: 65px;
   }
@@ -28,18 +27,60 @@ const Styles = styled.div`
     padding: 5vh;
   }
 
-  .project{
-      width: 337.5px;
-      height: 225px;
-      margin:20px;
-      transition: transform 2s;
+  h3{
+    font-family: "Candara", sans-serif;
+    font-weight:700;
+    padding:30px;
+    font-size:25px;
+    text-align:center;
+    color:#ECD4DB;
   }
+  p{
+      text-align:center;
+  }
+
+  }
+  .overflow {
+    background-color:#74535D; 
+    position:relative;
+    text-align:center;
+    width: 337.5px;
+    height: 225px;
+    overflow: hidden;
+    margin: 20px;
+}
+    .project{
+    width: 337.5px;
+    height: 225px;
+    margin:auto;
+    transition: transform 2s;
+
+}
   .project:hover{
       transform: scale(1.2);
-      opacity:0.6;
+      opacity:0.3;
       cursor: pointer;
   }
     
+    .overflow .text {
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity:1;
+        transition-delay: 0.1s;
+        transition-duration: 0.4s;
+        pointer-events: none;
+        
+    }
+
+    .overflow:hover .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
   .overlay2{
     position: absolute;
     background-color:#74535D;
@@ -67,9 +108,7 @@ class Projects extends Component {
         super(props);
         this.state = { addModalShow: false };
     }
-    handleEvent = event => {
-        alert("I was clicked");
-    };
+
 
     render() {
         let addModalClose = () => this.setState({ addModalShow: false });
@@ -92,22 +131,41 @@ class Projects extends Component {
                     <section className="projects-grid">
                         <div className="row">
                             <div className="col-sm">
-                                <img src={project1} alt="Robotic Soil Sampler" className="project cursor" />
+                                <div className="overflow"> 
+                                <img src={project1} alt="Robotic Soil Sampler" className="project cursor"
+                                onClick={() => this.setState({ addModalShow: true })} />
+                                <div className="text"><h3>Robotic Soil Sampler</h3></div>
+                                </div>
                             </div>
                             <div className="col-sm">
+                            <div className="overflow">
                                 <img src={project2} alt="Rubiks Cube Solver" className="project cursor"></img>
+                                <div className="text"><h3>Rubik's Cube Solver</h3></div>
+                            </div>
                             </div>
                             <div className="col-sm">
+                            <div className="overflow">
                                 <img src={project3} alt="InvFind" className="project cursor"></img>
+                                <div className="text"><h3>Invasive Species Detector</h3></div>
+                            </div>
                             </div>
                             <div className="col-sm">
+                            <div className="overflow">
                                 <img src={project4} alt="Ant Farm Simulation" className="project cursor"></img>
+                                <div className="text"><h3>Ant Farm Simulation</h3></div>
+                                </div>
                             </div>
                             <div className="col-sm">
+                            <div className="overflow">
                                 <img src={project5} alt="Dabble" className="project cursor"></img>
+                                <div className="text"><h3>Dabble Word Game</h3></div>
+                                </div>
                             </div>
                             <div className="col-sm">
+                            <div className="overflow">
                                 <img src={project6} alt="Conways" className="project cursor"></img>
+                                <div className="text"><h3>Conway's Game of Life</h3></div>
+                                </div>
                             </div>
                         </div>
                     </section>
