@@ -48,12 +48,14 @@ const Styles = styled.div`
     height: 225px;
     overflow: hidden;
     margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
     .project{
     width: 337.5px;
     height: 225px;
     margin:auto;
     transition: transform 2s;
+    
 
 }
   .project:hover{
