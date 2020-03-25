@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
+import ReactDOM from "react-dom";
 import styled from 'styled-components';
-import {Button, ButtonToolBar} from 'react-bootstrap';
-import {Modal1} from './components/Modal1';
+import { Button } from 'react-bootstrap';
+import { Modal1 } from './components/Modal1';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
 import project4 from './assets/2.JPG';
 import project5 from './assets/image3.png';
 import project6 from './assets/3.JPG';
+
+// import "./styles.css";
 
 const Styles = styled.div`
   .Projects {
@@ -60,20 +63,28 @@ const Styles = styled.div`
 `;
 
 class Projects extends Component {
-    state = {
-        show: false
-      };
-      showModal = e => {
-        this.setState({
-          show: !this.state.show
-        });
-      };
+    constructor(props) {
+        super(props);
+        this.state = { addModalShow: false };
+    }
+    handleEvent = event => {
+        alert("I was clicked");
+    };
 
     render() {
+        let addModalClose = () => this.setState({ addModalShow: false });
         return (
             <Styles>
-                <div className="Projects" id="projects">
-                    <div className="overlay2"></div>
+                <div className="projects" id="projects">
+                    <Button
+                        variant='primary'
+                        onClick={() => this.setState({ addModalShow: true })}
+                    >Click on me</Button>
+
+                    <Modal1
+                        show={this.state.addModalShow}
+                        onHide={addModalClose}
+                    />
                     <h1>Projects</h1>
                     <p>I've worked on several projects and tasks involving robotics,
         object-oriented programming, and graphic user interface. Here are some of my recent ones!</p>
@@ -84,27 +95,30 @@ class Projects extends Component {
                                 <img src={project1} alt="Robotic Soil Sampler" className="project cursor" />
                             </div>
                             <div className="col-sm">
-                                <img src={project2} alt="" className="project cursor"></img>
+                                <img src={project2} alt="Rubiks Cube Solver" className="project cursor"></img>
                             </div>
                             <div className="col-sm">
-                                <img src={project3} alt="" className="project cursor"></img>
+                                <img src={project3} alt="InvFind" className="project cursor"></img>
                             </div>
                             <div className="col-sm">
-                                <img src={project4} alt="" className="project cursor"></img>
+                                <img src={project4} alt="Ant Farm Simulation" className="project cursor"></img>
                             </div>
                             <div className="col-sm">
-                                <img src={project5} alt="" className="project cursor"></img>
+                                <img src={project5} alt="Dabble" className="project cursor"></img>
                             </div>
                             <div className="col-sm">
-                                <img src={project6} alt="" className="project cursor"></img>
+                                <img src={project6} alt="Conways" className="project cursor"></img>
                             </div>
                         </div>
                     </section>
 
                 </div>
             </Styles>
-        )
+        );
     }
 }
 
 export default Projects;
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<Projects />, rootElement);

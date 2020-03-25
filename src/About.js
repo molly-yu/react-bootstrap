@@ -72,8 +72,8 @@ export const About = () => (
       improving healthcare through computer science, mathematics, and engineering.  <br></br> 
     From self-learning through online resources to creating projects of
       my own, I am always trying to learn about the newest technologies and acquiring new skills. <br></br> <br></br>
-      Some of the technologies I've used include: <br></br>
-      <section class="container">
+      Some of the technologies I've used include: <br></br></p>
+      <section className="container">
           <ul>
             <li >C</li>
             <li >C++</li>
@@ -81,7 +81,7 @@ export const About = () => (
             <li >Python</li>
           </ul>
         </section>
-        <section class="container">
+        <section className="container">
           <ul>
             <li>HTML/CSS</li>
             <li >JavaScript</li>
@@ -89,7 +89,7 @@ export const About = () => (
             <li >Geneious</li>
           </ul>
         </section>
-      </p>
+      
     </div>
     </Styles>
 )
