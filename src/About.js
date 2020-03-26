@@ -89,17 +89,17 @@ export const About = () => (
       <div className="row">
       <div className="col-sm">
           <ul>
-            <li >C</li>
-            <li >C++</li>
-            <li >Java</li>
-            <li >Python</li>
+            <li >C/C++</li>
+            <li >JavaScript</li>
+            <li >React</li>
+            <li>Python</li>
           </ul>
         </div>
         <div className="col-sm">
           <ul>
-            <li>HTML/CSS</li>
-            <li >JavaScript</li>
-            <li >Arduino</li>
+            <li >Java</li>
+            <li >HTML/CSS</li>
+            <li >Bootstrap</li>
             <li >Geneious</li>
           </ul>
         </div>

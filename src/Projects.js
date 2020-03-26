@@ -30,6 +30,7 @@ const Styles = styled.div`
   .projects-grid{
     width:100%;
     padding: 5vh;
+    padding-top:0;
   }
 
   h3{
