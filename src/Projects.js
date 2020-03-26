@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import { Modal1 } from './components/Modal1';
 import { Modal2 } from './components/Modal2';
+import { Modal3 } from './components/Modal3';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
@@ -109,15 +110,16 @@ const Styles = styled.div`
 class Projects extends Component {
     constructor(props) {
         super(props);
-        this.state = { addModalShow1: false,addModalShow2: false  };
+        this.state = { addModalShow1: false, addModalShow2: false, addModalShow3:false};
     }
 
 
     render() {
-        let addModalClose = () => this.setState({ addModalShow1: false ,addModalShow2: false });
+        let addModalClose = () => this.setState({ addModalShow1: false ,addModalShow2: false, addModalShow3:false });
         return (
             <Styles>
                 <div className="projects" id="projects">
+                    <div className="overlay2"></div>
                     <Button
                         variant='primary'
                         onClick={() => this.setState({ addModalShow1: true })}
@@ -129,6 +131,10 @@ class Projects extends Component {
                     />
                     <Modal2
                         show={this.state.addModalShow2}
+                        onHide={addModalClose}
+                    />
+                    <Modal3
+                        show={this.state.addModalShow3}
                         onHide={addModalClose}
                     />
                     <h1>Projects</h1>
@@ -153,7 +159,8 @@ class Projects extends Component {
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project3} alt="InvFind" className="project cursor"></img>
+                                <img src={project3} alt="InvFind" className="project cursor"
+                                onClick={() => this.setState({ addModalShow3: true })}/>
                                 <div className="text"><h3>Invasive Species Detector</h3></div>
                             </div>
                             </div>
