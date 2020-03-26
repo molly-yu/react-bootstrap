@@ -3,7 +3,28 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
+.modal-dialog {
+    width: 700px; /* New width for default modal */
+  }
+h4{
+    font-family:"Candara", sans-serif;
+    color:#74535D;
+    font-weight:700;
+    font-variant-caps:petite-caps;
+}
+h5{
+    font-family:"Candara", sans-serif;
+    color:#74535D;
+    font-weight:600;
+}
+p{
+    font-family:"Candara", sans-serif;
+    color:#74535D;
+}
+.carousel{
+    margin:0 auto;
+    left:7%;
+}
 img{
     position:relative;
     width:500px;
@@ -20,7 +41,7 @@ img{
 }
 
 .modal-header {
-    background: #263238;
+    background: #74535D;
     height: 40px;
     /* line-height: 40px; */
     padding: 5px 20px;
@@ -40,7 +61,7 @@ img{
 }
 
 .modal-footer {
-    background: #263238;
+    background: #74535D;
     height: 35px;
     padding: 15px;
 }

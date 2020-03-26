@@ -21,9 +21,15 @@ const Styles = styled.div`
     text-align:center;
     color:#74535D;
   }
-  p{
-    width:80%
-    align:center;
+  .text{
+    //background-color:white;
+    font-family:"Candara", sans-serif;
+    color:#74535D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5vh;
+    width:90vh;
+    text-align:center;
   }
 
   .overlay{
@@ -54,6 +60,13 @@ const Styles = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -64,32 +77,34 @@ export const About = () => (
     <div className="overlay2"></div>
         <h1>About Me</h1>
         <img src={me} alt="Molly" className="portrait"></img>
-        <p>Hello! My name is Molly Yu and I am a software engineer based
-      in Toronto, Canada. I am currently studying Software Engineering at the University of Waterloo, seeking a Summer
-      2020 Co-op position. I have a strong passion for software development, particularly in Artificial Intelligence and
+        <div className="text">
+        <p>Hello! My name is Molly Yu and I am a software developer based
+      in Toronto, Canada. I am currently studying Software Engineering at the University of Waterloo, seeking a Winter 2021 Co-op position. I have a strong passion for software development, particularly in Artificial Intelligence and
       Machine Learning.
-      <br></br><br></br>Having participated in the International Biology Olympiad, I love all aspects of biology and am very passionate about
-      improving healthcare through computer science, mathematics, and engineering.  <br></br> 
-    From self-learning through online resources to creating projects of
-      my own, I am always trying to learn about the newest technologies and acquiring new skills. <br></br> <br></br>
-      Some of the technologies I've used include: <br></br></p>
-      <section className="container">
+      <br></br><br></br>In addition to my love for tech, I am very fond of biology and have taken the initiative to participate in the Canadian Biology Olympiad, eventually qualifying 
+      as one of four students to represent Team Canada at the International Biology Olympiad. 
+      Driven by my dual passion, I strive to improve healthcare through computer science, mathematics, and engineering.  <br></br> <br></br>
+      From self-learning through online resources to creating projects of my own, I am always trying to learn about the newest technologies and acquiring new skills. <br></br> 
+      Some of the technologies that I am familiar with include: <br></br></p>
+      <div className="row">
+      <div className="col-sm">
           <ul>
             <li >C</li>
             <li >C++</li>
             <li >Java</li>
             <li >Python</li>
           </ul>
-        </section>
-        <section className="container">
+        </div>
+        <div className="col-sm">
           <ul>
             <li>HTML/CSS</li>
             <li >JavaScript</li>
             <li >Arduino</li>
             <li >Geneious</li>
           </ul>
-        </section>
-      
+        </div>
+        </div>
+        </div>
     </div>
     </Styles>
 )

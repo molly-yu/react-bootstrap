@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import { Modal1 } from './components/Modal1';
+import { Modal2 } from './components/Modal2';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
@@ -108,22 +109,26 @@ const Styles = styled.div`
 class Projects extends Component {
     constructor(props) {
         super(props);
-        this.state = { addModalShow: false };
+        this.state = { addModalShow1: false,addModalShow2: false  };
     }
 
 
     render() {
-        let addModalClose = () => this.setState({ addModalShow: false });
+        let addModalClose = () => this.setState({ addModalShow1: false ,addModalShow2: false });
         return (
             <Styles>
                 <div className="projects" id="projects">
                     <Button
                         variant='primary'
-                        onClick={() => this.setState({ addModalShow: true })}
+                        onClick={() => this.setState({ addModalShow1: true })}
                     >Click on me</Button>
 
                     <Modal1
-                        show={this.state.addModalShow}
+                        show={this.state.addModalShow1}
+                        onHide={addModalClose}
+                    />
+                    <Modal2
+                        show={this.state.addModalShow2}
                         onHide={addModalClose}
                     />
                     <h1>Projects</h1>
@@ -135,13 +140,14 @@ class Projects extends Component {
                             <div className="col-sm">
                                 <div className="overflow"> 
                                 <img src={project1} alt="Robotic Soil Sampler" className="project cursor"
-                                onClick={() => this.setState({ addModalShow: true })} />
+                                onClick={() => this.setState({ addModalShow1: true })} />
                                 <div className="text"><h3>Robotic Soil Sampler</h3></div>
                                 </div>
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project2} alt="Rubiks Cube Solver" className="project cursor"></img>
+                                <img src={project2} alt="Rubiks Cube Solver" className="project cursor" 
+                                 onClick={() => this.setState({ addModalShow2: true })}/>
                                 <div className="text"><h3>Rubik's Cube Solver</h3></div>
                             </div>
                             </div>
