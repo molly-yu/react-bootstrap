@@ -5,6 +5,9 @@ import { Button } from 'react-bootstrap';
 import { Modal1 } from './components/Modal1';
 import { Modal2 } from './components/Modal2';
 import { Modal3 } from './components/Modal3';
+import { Modal4 } from './components/Modal4';
+import { Modal5 } from './components/Modal5';
+import { Modal6 } from './components/Modal6';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
@@ -110,20 +113,18 @@ const Styles = styled.div`
 class Projects extends Component {
     constructor(props) {
         super(props);
-        this.state = { addModalShow1: false, addModalShow2: false, addModalShow3:false};
+        this.state = { addModalShow1: false, addModalShow2: false, addModalShow3:false, 
+            addModalShow4: false, addModalShow5: false, addModalShow6:false};
     }
 
 
     render() {
-        let addModalClose = () => this.setState({ addModalShow1: false ,addModalShow2: false, addModalShow3:false });
+        let addModalClose = () => this.setState({ addModalShow1: false ,addModalShow2: false, addModalShow3:false, 
+            addModalShow4: false, addModalShow5: false, addModalShow6:false});
         return (
             <Styles>
                 <div className="projects" id="projects">
                     <div className="overlay2"></div>
-                    <Button
-                        variant='primary'
-                        onClick={() => this.setState({ addModalShow1: true })}
-                    >Click on me</Button>
 
                     <Modal1
                         show={this.state.addModalShow1}
@@ -135,6 +136,18 @@ class Projects extends Component {
                     />
                     <Modal3
                         show={this.state.addModalShow3}
+                        onHide={addModalClose}
+                    />
+                    <Modal4
+                        show={this.state.addModalShow4}
+                        onHide={addModalClose}
+                    />
+                    <Modal5
+                        show={this.state.addModalShow5}
+                        onHide={addModalClose}
+                    />
+                    <Modal6
+                        show={this.state.addModalShow6}
                         onHide={addModalClose}
                     />
                     <h1>Projects</h1>
@@ -166,19 +179,22 @@ class Projects extends Component {
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project4} alt="Ant Farm Simulation" className="project cursor"></img>
+                                <img src={project4} alt="Ant Farm Simulation" className="project cursor"
+                                onClick={() => this.setState({ addModalShow4: true })}/>
                                 <div className="text"><h3>Ant Farm Simulation</h3></div>
                                 </div>
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project5} alt="Dabble" className="project cursor"></img>
+                                <img src={project5} alt="Dabble" className="project cursor"
+                                onClick={() => this.setState({ addModalShow5: true })}/>
                                 <div className="text"><h3>Dabble Word Game</h3></div>
                                 </div>
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project6} alt="Conways" className="project cursor"></img>
+                                <img src={project6} alt="Conways" className="project cursor"
+                                onClick={() => this.setState({ addModalShow6: true })}/>
                                 <div className="text"><h3>Conway's Game of Life</h3></div>
                                 </div>
                             </div>

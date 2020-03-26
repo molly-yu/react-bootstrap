@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import './Modal.css';
-import Carousel3 from './Carousel3';
+import Carousel4 from './Carousel4';
 
-export class Modal3 extends Component{
+export class Modal4 extends Component{
     constructor(props){
         super(props);
     }
@@ -22,18 +22,18 @@ export class Modal3 extends Component{
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>InvFind</h4>
+        <h4>Ant Farm Simulation</h4>
         {/* <img src = {p1} alt="1"/> */}
         <div className="carousel">
-          <Carousel3></Carousel3>
+          <Carousel4></Carousel4>
           </div>
-        <h5><i>Machine Learning, TensorFlow, Python, Flask, HTML, CSS</i></h5>
+        <h5><i>Java, OOP</i></h5>
         <p>
-        A machine learning based app 
-      created to encourage Ontarians to help in the process of finding and removing species that are 
-      invasive and harmful to natural ecosystems. Uses a neural network to identify whether or not an 
-      image submitted contains an invasive species. <br/>
-      <a href="https://github.com/TheAndrew2115/DeltaHacks" target="_blank">Check it out on GitHub!</a>
+        A Java simulation of an ant ecosystem with realistic 
+      animal and human interactions (e.g. mating, competition, predation, mutualism, disease, 
+      human involvement) using OOP.
+      Uses GUI to model and display progress of simulation. <br/>
+      <a href="https://github.com/molly-yu/Ant-Farm-Simulation" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
       <Modal.Footer>

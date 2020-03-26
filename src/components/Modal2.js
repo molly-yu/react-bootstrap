@@ -33,11 +33,11 @@ export class Modal2 extends Component{
       than 25 seconds. A React Native app is used to callibrate the colours in different 
       lighting environments, then scan the colour combinations on the scrambled cube. An 
       optimized solving algorithm was created, then implemented to physically unscramble the cube.<br/>
-      <a href="https://github.com/anthony-chang/Rubiks-Cube-Solver" target="_blank">Check out the code!</a>
+      <a href="https://github.com/anthony-chang/Rubiks-Cube-Solver" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={this.props.onHide}>Close</Button>
+        {/* <Button onClick={this.props.onHide}>Close</Button> */}
       </Modal.Footer>
     </Modal>
         )

@@ -36,7 +36,7 @@ export class Modal1 extends Component{
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={this.props.onHide}>Close</Button>
+        {/* <Button onClick={this.props.onHide}>Close</Button> */}
       </Modal.Footer>
     </Modal>
         )

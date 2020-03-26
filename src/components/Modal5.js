@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import './Modal.css';
-import Carousel3 from './Carousel3';
+import Carousel5 from './Carousel5';
 
-export class Modal3 extends Component{
+export class Modal5 extends Component{
     constructor(props){
         super(props);
     }
@@ -22,18 +22,16 @@ export class Modal3 extends Component{
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>InvFind</h4>
+        <h4>Dabble</h4>
         {/* <img src = {p1} alt="1"/> */}
         <div className="carousel">
-          <Carousel3></Carousel3>
+          <Carousel5></Carousel5>
           </div>
-        <h5><i>Machine Learning, TensorFlow, Python, Flask, HTML, CSS</i></h5>
+        <h5><i>Java, OOP</i></h5>
         <p>
-        A machine learning based app 
-      created to encourage Ontarians to help in the process of finding and removing species that are 
-      invasive and harmful to natural ecosystems. Uses a neural network to identify whether or not an 
-      image submitted contains an invasive species. <br/>
-      <a href="https://github.com/TheAndrew2115/DeltaHacks" target="_blank">Check it out on GitHub!</a>
+        A GUI-based, mouse-controlled single player board game,
+       known as Dabble. An implemented scoring system ranks players based on word length and time taken.<br/>
+      <a href="https://github.com/molly-yu/DabbleGame" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
       <Modal.Footer>
