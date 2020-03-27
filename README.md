@@ -1,2 +1,2 @@
 # react-bootstrap
- Responsive website created using react
+ Responsive personal website created using React, and React-Bootstrap. Check it out!
