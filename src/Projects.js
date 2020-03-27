@@ -210,5 +210,3 @@ class Projects extends Component {
 
 export default Projects;
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Projects />, rootElement);
