@@ -28,7 +28,7 @@ const Styles = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-top:5vh;
-    width:90vh;
+    width:70%;
     text-align:center;
   }
 
