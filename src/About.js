@@ -79,28 +79,37 @@ export const About = () => (
         <img src={me} alt="Molly" className="portrait"></img>
         <div className="text">
         <p>Hello! My name is Molly Yu and I am a software developer based
-      in Toronto, Canada. I am currently studying Software Engineering at the University of Waterloo, seeking a Winter 2021 Co-op position. I have a strong passion for software development, particularly in Artificial Intelligence and
+      in Toronto, Canada. I am currently studying Software Engineering at the University of Waterloo, seeking a Winter 2021 Co-op position. 
+      I have a strong passion for software development, particularly in Web Development and
       Machine Learning.
-      <br></br><br></br>In addition to my love for tech, I am very fond of biology and have taken the initiative to participate in the Canadian Biology Olympiad, eventually qualifying 
-      as one of four students to represent Team Canada at the International Biology Olympiad. 
+      <br></br><br></br>In addition to my love for tech, I am incredibly fond of biology and have taken the initiative to participate in 
+      the Canadian Biology Olympiad, qualifying as one of four students to represent Team Canada at the International Biology Olympiad. 
       Driven by my dual passion, I strive to improve healthcare through computer science, mathematics, and engineering.  <br></br> <br></br>
       From self-learning through online resources to creating projects of my own, I am always trying to learn about the newest technologies and acquiring new skills. <br></br> 
-      Some of the technologies that I am familiar with include: <br></br></p>
+      Some of the languages and technologies that I am familiar with include: <br></br></p>
       <div className="row">
       <div className="col-sm">
           <ul>
-            <li >C/C++</li>
-            <li >JavaScript</li>
-            <li >React</li>
+            <li >C++</li>
+            <li >Java</li>
+            <li >C#</li>
             <li>Python</li>
           </ul>
         </div>
         <div className="col-sm">
           <ul>
-            <li >Java</li>
-            <li >HTML/CSS</li>
+            <li >JavaScript</li>
+            <li >CSS</li>
+            <li >HTML</li>
+            <li >SQL</li>
+          </ul>
+        </div>
+        <div className="col-sm">
+          <ul>
+            <li >React</li>
             <li >Bootstrap</li>
-            <li >Geneious</li>
+            <li >Express.js</li>
+            <li>MongoDB</li>
           </ul>
         </div>
         </div>

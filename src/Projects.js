@@ -42,7 +42,10 @@ const Styles = styled.div`
     color:#ECD4DB;
   }
   p{
-      text-align:center;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
   }
 
   }
@@ -152,8 +155,9 @@ class Projects extends Component {
                         onHide={addModalClose}
                     />
                     <h1>Projects</h1>
-                    <p>I've worked on several projects and tasks involving robotics,
-        object-oriented programming, and graphic user interface. Here are some of my recent ones!</p>
+                    <p>I've worked on several projects and tasks involving web development, machine learning, 
+        object-oriented programming, and robotics. These are some of my recent ones.
+        Check out my <a href = "https://github.com/molly-yu" target="_blank">GitHub</a> for more info!</p>
 
                     <section className="projects-grid">
                         <div className="row">

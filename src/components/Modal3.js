@@ -27,12 +27,12 @@ export class Modal3 extends Component{
         <div className="carousel">
           <Carousel3></Carousel3>
           </div>
-        <h5><i>Machine Learning, TensorFlow, Python, Flask, HTML, CSS</i></h5>
+        <h5><i>Machine Learning, TensorFlow, Python, HTML</i></h5>
         <p>
-        A machine learning based app 
+        A machine learning app 
       created to encourage Ontarians to help in the process of finding and removing species that are 
       invasive and harmful to natural ecosystems. Uses a neural network to identify whether or not an 
-      image submitted contains an invasive species. <br/>
+      image submitted contains an invasive species. Front-end created using Python Flask.<br/>
       <a href="https://github.com/TheAndrew2115/DeltaHacks" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
