@@ -30,10 +30,14 @@ export class Modal2 extends Component{
         <h5><i>Python, React Native, OpenCV, Java, Arduino</i></h5>
         <p>
         A robotic machine that solves any permutation of a 3x3 Rubik's Cube in less 
-      than 25 seconds. A React Native app is used to callibrate the colours in different 
+      than 25 seconds! A computer vision application with edge detection and colour extraction was built
+       to callibrate the colours in different 
       lighting environments, then scan the colour combinations on the scrambled cube. An 
       optimized solving algorithm was created, then implemented to physically unscramble the cube.<br/>
       <a href="https://github.com/anthony-chang/Rubiks-Cube-Solver" target="_blank">Check it out on GitHub!</a>
+      <br/>
+      <a href="https://www.youtube.com/watch?v=RJEP8BWsFSk" target="_blank">Watch our demo video!</a>
+      
         </p>
       </Modal.Body>
       <Modal.Footer>

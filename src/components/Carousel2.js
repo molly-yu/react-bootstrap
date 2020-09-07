@@ -9,17 +9,31 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .car1 {
-    width:500px;
-    height:333px;
-    position:relative;
+  width:80%;
+  height:30%;
+  position:relative;
+ // margin:auto;
+}
+image {
+  width:80%;
+  height:30%;
+  position:relative;
+  opacity:80%;
+
+}
+
+  
+  .carousel-indicators li {
+    background-color: #74535D;
   }
-  image {
-    width:500px;
-    height:333px;
-    position:relative;
- 
-  }
-    
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2374535D' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2374535D' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 `;
 
 const Carousel2 = () => {
@@ -29,7 +43,7 @@ const Carousel2 = () => {
     <MDBContainer>
       <MDBCarousel
         activeItem={1}
-        length={4}
+        length={5}
         showControls={true}
         showIndicators={true}
         className="z-depth-1"
@@ -70,6 +84,13 @@ const Carousel2 = () => {
                 src={p4}
                 alt="Fourth slide"
               />
+            </MDBView>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="5">
+            <MDBView>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RJEP8BWsFSk"></iframe>
+            </div>
             </MDBView>
           </MDBCarouselItem>
         </MDBCarouselInner>

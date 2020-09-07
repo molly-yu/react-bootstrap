@@ -22,18 +22,16 @@ export class Modal4 extends Component{
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Ant Farm Simulation</h4>
+        <h4>StudyNotes</h4>
         {/* <img src = {p1} alt="1"/> */}
         <div className="carousel">
           <Carousel4></Carousel4>
           </div>
-        <h5><i>Java, OOP</i></h5>
+        <h5><i>React, Flask, MongoDB</i></h5>
         <p>
-        A Java simulation of an ant ecosystem with realistic 
-      animal and human interactions (e.g. mating, competition, predation, mutualism, disease, 
-      human involvement) using OOP.
-      Uses GUI to model and display progress of simulation. <br/>
-      <a href="https://github.com/molly-yu/Ant-Farm-Simulation" target="_blank">Check it out on GitHub!</a>
+        A social media platform for collaborative studying. Users can automatically upload their notes, 
+        track their productivity, and follow friends!<br/>
+      <a href="https://github.com/studynotesapp" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
       <Modal.Footer>

@@ -22,15 +22,16 @@ export class Modal6 extends Component{
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Conway's Game of Life</h4>
+        <h4>ARBSUtility</h4>
         {/* <img src = {p1} alt="1"/> */}
         <div className="carousel">
           <Carousel6></Carousel6>
           </div>
-        <h5><i>Java</i></h5>
+        <h5><i>React, Electron, Go</i></h5>
         <p>
-        A GUI-based recreation of Conway's Game of Life, a cellular automaton.<br/>
-      <a href="https://github.com/molly-yu/Conway-s-Game-of-Life" target="_blank">Check it out on GitHub!</a>
+        Desktop application for automated hardware testing through network communication with IP Cameras, Switches,
+        and I/O Controllers.<br/>
+      <a href="https://github.com/molly-yu/ARBSUtility" target="_blank">Check it out on GitHub!</a>
         </p>
       </Modal.Body>
       <Modal.Footer>

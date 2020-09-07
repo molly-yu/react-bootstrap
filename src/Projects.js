@@ -11,9 +11,9 @@ import { Modal6 } from './components/Modal6';
 import project1 from './assets/5.jpg';
 import project2 from './assets/11.PNG';
 import project3 from './assets/13.PNG';
-import project4 from './assets/2.JPG';
+import project4 from './assets/1.PNG';
 import project5 from './assets/image3.png';
-import project6 from './assets/3.JPG';
+import project6 from './assets/15.png';
 
 // import "./styles.css";
 
@@ -24,12 +24,13 @@ const Styles = styled.div`
     width:100%;
     position:relative;
     text-align:center;
-    padding-top: 65px;
+    padding-top: 20px;
   }
     
   .projects-grid{
-    width:100%;
-    padding: 5vh;
+    margin:auto;
+    max-width:85%;
+    padding: 20px;
     padding-top:0;
   }
 
@@ -45,7 +46,7 @@ const Styles = styled.div`
     text-align:center;
     margin-left: auto;
     margin-right: auto;
-    width:70%;
+    width:50%;
   }
 
   }
@@ -53,15 +54,15 @@ const Styles = styled.div`
     background-color:#74535D; 
     position:relative;
     text-align:center;
-    width: 337.5px;
-    height: 225px;
+    width:250px;
+    height: 170px;
     overflow: hidden;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
     .project{
-    width: 337.5px;
-    height: 225px;
+    width: 250px;
+    height: 170px;
     margin:auto;
     transition: transform 2s;
     
@@ -91,17 +92,6 @@ const Styles = styled.div`
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-  .overlay2{
-    position: absolute;
-    background-color:#74535D;
-    opacity:0.6;
-    top: 60px;
-    left: 0;
-    right: 0;
-    height:5px;
-    z-index = -1;
-  }
   
   .portrait{
     width:250px;
@@ -128,7 +118,6 @@ class Projects extends Component {
         return (
             <Styles>
                 <div className="projects" id="projects">
-                    <div className="overlay2"></div>
 
                     <Modal1
                         show={this.state.addModalShow1}
@@ -154,10 +143,10 @@ class Projects extends Component {
                         show={this.state.addModalShow6}
                         onHide={addModalClose}
                     />
-                    <h1>Projects</h1>
-                    <p>I've worked on several projects and tasks involving web development, machine learning, 
-        object-oriented programming, and robotics. These are some of my recent ones.
-        Check out my <a href = "https://github.com/molly-yu" target="_blank">GitHub</a> for more info!</p>
+                    <h1>Projects</h1><hr size="10" width="50%" />
+                    <p>Here are some of the recent projects I've worked on, focusing on web development,
+                         machine learning, and embedded systems.
+                        Check out my <a href = "https://github.com/molly-yu" target="_blank">GitHub</a> for more!</p>
 
                     <section className="projects-grid">
                         <div className="row">
@@ -179,14 +168,14 @@ class Projects extends Component {
                             <div className="overflow">
                                 <img src={project3} alt="InvFind" className="project cursor"
                                 onClick={() => this.setState({ addModalShow3: true })}/>
-                                <div className="text"><h3>Invasive Species Detector</h3></div>
+                                <div className="text"><h3>InvFind</h3></div>
                             </div>
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project4} alt="Ant Farm Simulation" className="project cursor"
+                                <img src={project4} alt="StudyNotes" className="project cursor"
                                 onClick={() => this.setState({ addModalShow4: true })}/>
-                                <div className="text"><h3>Ant Farm Simulation</h3></div>
+                                <div className="text"><h3>StudyNotes</h3></div>
                                 </div>
                             </div>
                             <div className="col-sm">
@@ -198,9 +187,9 @@ class Projects extends Component {
                             </div>
                             <div className="col-sm">
                             <div className="overflow">
-                                <img src={project6} alt="Conways" className="project cursor"
+                                <img src={project6} alt="ARBSUtility" className="project cursor"
                                 onClick={() => this.setState({ addModalShow6: true })}/>
-                                <div className="text"><h3>Conway's Game of Life</h3></div>
+                                <div className="text"><h3>ARBSUtility</h3></div>
                                 </div>
                             </div>
                         </div>

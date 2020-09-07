@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .Connect {
-    background-color: #EDD7DE;
+    background-color: #F9E9EF;
     height:100vh;
     width:100%;
     position:relative;
     text-align:center;
-    padding-top: 65px;
+    padding-top: 25px;
   }
     h2{
       font-family: "Candara", sans-serif;
@@ -16,7 +16,12 @@ const Styles = styled.div`
       padding:30px;
       text-align:center;
       color:#74535D;
-      font-size:25px;
+      font-size:15px;
+    }
+    
+    p{
+      width:50%;
+      margin:auto;
     }
 
     .social-links{
@@ -32,25 +37,14 @@ const Styles = styled.div`
       padding:8px;
     }
 
-    .overlay2{
-      position: absolute;
-      background-color:#74535D;
-      opacity:0.6;
-      top: 60px;
-      left: 0;
-      right: 0;
-      height:5px;
-      z-index = -1;
-    }
 `;
 
 
 export const Connect = () => (
     <Styles>
     <div className="Connect" id="connect">
-      <div className="overlay2"></div> 
-        <h1>Connect</h1>
-        <h2>Feel free to contact me through GitHub, Linkedin, or by email. </h2>
+        <h1>Connect</h1><hr size="10" width="50%" />
+        <p>Feel free to contact me through GitHub, LinkedIn, or by email. </p>
         <div className="social-links">
         <a href="https://github.com/molly-yu" rel="noopener noreferrer" target="_blank" >
             <i className="fa fa-github-square" aria-hidden="true"/>

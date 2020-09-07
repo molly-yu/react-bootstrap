@@ -4,116 +4,144 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .About {
-    background-color: #EDD7DE;
+    background-color: #F9E9EF ;
+    // #EDD7DE
     min-height:100vh;
     width:100%;
     position:relative;
     z-index: -2;
     text-align:center;
-    padding-top: 65px;
+    padding-top: 50px;
+    padding-bottom:20px;
     margin:0;
   }
 
-  h1{
-    font-family: "Candara", sans-serif;
-    font-weight:500;
-    padding:30px;
-    text-align:center;
-    color:#74535D;
-  }
   .text{
     //background-color:white;
     font-family:"Candara", sans-serif;
     color:#74535D;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:5vh;
-    width:70%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width:70%;
     text-align:center;
-  }
-
-  .overlay{
-    position: absolute;
-    background-color:#74535D;
-    top: 0;
-    left: 0;
-    right: 0;
-    height:65px;
-    z-index = -1;
-  }
-  .overlay2{
-    position: absolute;
-    background-color:#EDD7DE;
-    opacity:0.6;
-    top: 13px;
-    left: 0;
-    right: 0;
-    height:39px;
-    z-index = -0;
   }
     
   .portrait{
-    width:250px;
-    height:250px;
-    border-radius: 50%;
-    padding:0;
+    width:200px;
+    height:200px;
+    border-radius: 4%;
+    padding:3px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // margin-left: auto;
+    // margin-right: auto;
+    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #D8D5D5;
   }
 
   ul {
     list-style-type: none;
+    font-family:"Candara", sans-serif;
+    color:#74535D;
     margin: 0;
     padding: 0;
   }
+
+    .container{
+        width:50%;
+    }
+
+    .icons{ 
+      padding-top:30px;
+      padding-bottom:50px;
+      padding-left:100px;
+      padding-right:100px;
+      
+      i{
+      color:#74535D;
+      font-size:70px;
+      padding:8px;
+    }
+  }
+
 `;
 
 export const About = () => (
   <Styles>
     <div className="About" id="about">
-    <div className="overlay"></div>
-    <div className="overlay2"></div>
-        <h1>About Me</h1>
-        <img src={me} alt="Molly" className="portrait"></img>
-        <div className="text">
-        <p>Hello! My name is Molly Yu and I am a software developer based
-      in Toronto, Canada. I am currently studying Software Engineering at the University of Waterloo, seeking a Winter 2021 Co-op position. 
-      I have a strong passion for software development, particularly in Web Development and
-      Machine Learning.
-      <br></br><br></br>In addition to my love for tech, I am incredibly fond of biology and have taken the initiative to participate in 
-      the Canadian Biology Olympiad, qualifying as one of four students to represent Team Canada at the International Biology Olympiad. 
-      Driven by my dual passion, I strive to improve healthcare through computer science, mathematics, and engineering.  <br></br> <br></br>
-      From self-learning through online resources to creating projects of my own, I am always trying to learn about the newest technologies and acquiring new skills. <br></br> 
-      Some of the languages and technologies that I am familiar with include: <br></br></p>
-      <div className="row">
-      <div className="col-sm">
-          <ul>
-            <li >C++</li>
-            <li >Java</li>
-            <li >C#</li>
-            <li>Python</li>
-          </ul>
+      <h1>About Me</h1><hr size="10" width="50%" />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            <img src={me} alt="Molly" className="portrait"></img>
+          </div>
+
+          <div className="col-sm">
+            <div className="text">
+              <p>Hey there! I'm <b>Molly</b>, a software engineer based in <b>Toronto/Waterloo, Canada.</b> <br />
+          I'm studying towards a degree in <b>Software Engineering</b> at the <b>University of Waterloo</b>,
+           and I'm seeking internship opportunities for the upcoming Winter term starting <b>January 2021</b>!
+          <br /><br /> Always open to chatting or collaborating with other students and professionals in the field!  </p>
+            </div>
+          </div>
         </div>
-        <div className="col-sm">
-          <ul>
-            <li >JavaScript</li>
-            <li >CSS</li>
-            <li >HTML</li>
-            <li >SQL</li>
-          </ul>
+      </div>
+
+      <div className="text">
+        <h2>
+          Areas of Expertise <br></br></h2>
+      </div>
+
+      <div className="icons">
+        <div className="row">
+          <div className="col-sm">
+            <i className="fa fa-code" aria-hidden="true" />
+            <h3>Programming</h3>
+            <ul>
+              <li >C/C++</li>
+              <li >Java</li>
+              <li >JavaScript</li>
+              <li>Python</li>
+              <li>Go</li>
+            </ul>
+
+          </div>
+          <div className="col-sm">
+            <i className="fa fa-desktop fa-sm" aria-hidden="true" />
+            <h3>Web Development</h3>
+            <ul>
+              <li >HTML/CSS</li>
+              <li >React</li>
+              <li >Node.js</li>
+              <li >Bootstrap</li>
+              <li>Electron</li>
+              
+            </ul>
+          </div>
+          <div className="col-sm">
+            <i className="fa fa-paper-plane" aria-hidden="true" />
+            <h3>Machine Learning</h3>
+            <ul>
+              <li >TensorFlow</li>
+              <li >Keras</li>
+              <li >Caffe</li>
+              <li>PyTorch</li>
+              <li>OpenCV</li>
+            </ul>
+          </div>
+          <div className="col-sm">
+            <i className="fa fa-keyboard-o" aria-hidden="true" />
+            <h3>Other Technologies</h3>
+            <ul>
+              <li >SQL</li>
+              <li >MongoDB</li>
+              <li >Git</li>
+              <li>Docker</li>
+              <li>AWS</li>
+            </ul>
+          </div>
         </div>
-        <div className="col-sm">
-          <ul>
-            <li >React</li>
-            <li >Bootstrap</li>
-            <li >Express.js</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-        </div>
-        </div>
+      </div>
+
     </div>
-    </Styles>
+  </Styles>
 )
